@@ -1,7 +1,7 @@
 baseURL: https://shubhank-saxena.github.io
 
 languageCode: en-us
-title: "Shubhank's Blog"
+title: "Shubhank's Portfolio"
 
 # Use Hugo modules to add theme
 module:
@@ -70,7 +70,7 @@ params:
 
   # Configure the number of section title visible in the top navbar
   topNavbar:
-    maxVisibleSections: 5
+    maxVisibleSections: 7
 
   # Configure various features of this theme
   features:
@@ -94,7 +94,7 @@ params:
 
     # Enable and configure blog posts
     blog:
-      enable: true
+      enable: false
       # Share post on different social media
       shareButtons:
         facebook: true
@@ -110,7 +110,7 @@ params:
 
     # Enable & configure "Notes" features
     notes:
-      enable: true
+      enable: false
 
     # Enable comment feature. There, should be only one of them.
     comment:
@@ -267,7 +267,7 @@ params:
     template: footer.html
     # Show/hide navigation in the footer. Default is "true".
     navigation:
-      enable: true
+      enable: false
       # show custom menus in the footer
       customMenus: true
     # Show/hide "Contact Me" section in the footer. Default is "true".

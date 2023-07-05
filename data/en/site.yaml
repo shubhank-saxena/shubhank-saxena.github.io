@@ -22,7 +22,7 @@ customMenus:
 
 # Specify OpenGraph Headers
 openGraph:
-  title: Shubhank's Blog
+  title: Shubhank's Portfolio
   type: website
   description: Portfolio and personal blog of Shubhank Saxena.
   image: images/author/shubhank.jpeg
