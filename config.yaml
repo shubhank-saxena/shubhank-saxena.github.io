@@ -1,4 +1,4 @@
-baseURL: https://hugo-toha.github.io
+baseURL: https://shubhank-saxena.github.io
 
 languageCode: en-us
 title: "John's Blog"
@@ -64,7 +64,7 @@ params:
     favicon: /images/site/favicon.png
 
   # GitHub repo of your site
-  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+  gitRepo: https://github.com/shubhank-saxena/shubhank-saxena.github.io
   # Default branch of your Git repo
   gitBranch: main
 
@@ -152,7 +152,7 @@ params:
       services:
         # Google Analytics
         google:
-          id: G-H4LBG7NDFZ
+          id: G-81GV71DWJW
         # # CounterDev
         # counterDev:
         #   id: <your counterdev id>
@@ -279,10 +279,12 @@ params:
 
     # Show/hide newsletter section in the footer. Default is "true".
     # Currently, it supports "mailchimp".
+    # newsletter:
+    #   enable: true
+    #   provider: mailchimp
+    #   mailchimpURL: https://github.us1.list-manage.com/subscribe/post?u=19de52a4603135aae97163fd8&amp;id=094a24c76e
     newsletter:
-      enable: true
-      provider: mailchimp
-      mailchimpURL: https://github.us1.list-manage.com/subscribe/post?u=19de52a4603135aae97163fd8&amp;id=094a24c76e
+      enable: false
 
     # Show/hide disclaimer notice in the footer. Default is "false".
     disclaimer:
