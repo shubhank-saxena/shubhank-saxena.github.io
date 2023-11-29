@@ -10,6 +10,14 @@ section:
   # hideTitle: true
 
 degrees:
+- name: Masters of Sciences in Information Systems
+  icon: fa-graduation-cap
+  timeframe: 2023-Ongoing
+  institution:
+    name: Northeastern University
+    url: "https://www.northeastern.edu/"
+  extracurricularActivities: #(optional)
+  - Member of Northeastern University's Blockchain Club NEU Blockchain.
 - name: B.Engineering in Electronics & Communication Engineering
   icon: fa-graduation-cap
   timeframe: 2017-2021
