@@ -11,6 +11,18 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Stealth startup
+    location: Remote
+    overview: Better Commerce Content
+  positions:
+  - designation: Software Engineer
+    start: July 2023
+    end: August 2023
+    responsibilities:
+    - Worked on builidng data ingestion pipelines to get media performance data from various sources.
+    - Created a LLM based conversational AI to help users with their queries.
+
+- company:
     name: Wall
     url: "https://www.wall.app"
     location: Remote
@@ -19,7 +31,7 @@ experiences:
   positions:
   - designation: Engineering Lead
     start: Sep 2022
-    end: July 2023
+    end: June 2023
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
@@ -28,7 +40,6 @@ experiences:
     - Optimized ETL pipelines and reduced cost of storage by migrating legacy data to AWS S3.
     - Managed a team of 5 developers to ship an end-to-end application comprising of backend, frontend and smart-contracts.
     - Shipped a feature which gained traction of 5000 users in one week.
-
   - designation: Backend Engineer
     start: Jan 2022
     end: Sep 2022
