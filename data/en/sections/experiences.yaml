@@ -11,7 +11,19 @@ section:
 # Your experiences
 experiences:
 - company:
-    name: Stealth startup
+    name: First Rounds On Me
+    url: "https://firstroundsonme.co/"
+    location: New York, NY
+    overview: No more pen pals or small talk! Plan a date. Meet in person
+  positions:
+  - designation: Backend Engineering Intern
+    start: May 2024
+    end: Ongoing
+    responsibilities:
+    - Maintained and improved the backend infrastructure of the application.
+- company:
+    name: Bullwhip 
+    url: "https://www.bullwhip.io/"
     location: Remote
     overview: Better Commerce Content
   positions:
@@ -21,7 +33,6 @@ experiences:
     responsibilities:
     - Worked on builidng data ingestion pipelines to get media performance data from various sources.
     - Created a LLM based conversational AI to help users with their queries.
-
 - company:
     name: Wall
     url: "https://www.wall.app"
