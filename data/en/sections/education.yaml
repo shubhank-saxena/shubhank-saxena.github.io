@@ -1,0 +1,59 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: Masters of Sciences in Information Systems
+  icon: fa-graduation-cap
+  timeframe: 2023-Ongoing
+  institution:
+    name: Northeastern University
+    url: "https://www.northeastern.edu/"
+  grade: #(optional)
+    scale: GPA
+    achieved: 3.6
+    outOf: 4.0
+  extracurricularActivities: #(optional)
+  - Member of Northeastern University's Blockchain Club NEU Blockchain.
+- name: B.Engineering in Electronics & Communication Engineering
+  icon: fa-graduation-cap
+  timeframe: 2017-2021
+  institution:
+    name: Thapar Institute of Engineering and Technology
+    url: "https://www.thapar.edu/"
+  grade: #(optional)
+    scale: CGPA
+    achieved: 7.68
+    outOf: 10
+  publications: #(optional)
+  - title: Patent - Braille Reading Device
+    url: "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/PatentDetails"
+  - title: Patent - Communication device for Visually Impaired People
+    url: "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/PatentDetails"
+  - title: System to provide assistance in Autism Spectrum Disorder
+    url: "https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/PatentDetails"
+  extracurricularActivities: #(optional)
+  - Founded Developer Student Clubs TIET chapter along with an amazing team of fellow developers.
+  - Fellow Core Member of GirlScript Patiala team.
+  - Conducted HackTIET, a 24-hour hackathon with 200+ participants.
+
+- name: Secondary School
+  icon: fa-school
+  timeframe: 2015-2017
+  institution:
+    name: Seth Anandram Jaipuria School
+  grade: #(optional)
+    scale: Percentage
+    achieved: 92
+    outOf: 100
+  extracurricularActivities: #(optional)
+  - Founder of Cyber Crew - SAJS's first computer society
+  - Deputy Head Boy for academic session 2016-17
+  - Active participant in various debates and Model United Nations
