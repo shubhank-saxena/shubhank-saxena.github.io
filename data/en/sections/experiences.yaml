@@ -14,11 +14,19 @@ experiences:
     name: First Rounds On Me
     url: "https://firstroundsonme.co/"
     location: New York, NY
-    overview: No more pen pals or small talk! Plan a date. Meet in person
+    overview: Catching up with friends. Meeting someone new. Date night with your partner. FROM makes it easy to show up, then rewards you for it.
   positions:
+  - designation: Vice President of Technology
+    start: September 2025
+    end: Ongoing
+    responsibilities:
+    - "Pivoted the company from a dating app to a social app, building a new backend and infrastructure from scratch."
+    - "Led a team of 2 frontend engineers and a designer to build a new social app from scratch."
+    - "Built internal dashboards using Next.js and Tailwind CSS to help the team track the progress of the app and admin tasks."
+    - "Rewrote the entire backend of the app to be more efficient and scalable."
   - designation: Backend Engineering Intern
     start: May 2024
-    end: Ongoing
+    end: December 2024
     responsibilities:
     - "Solely led the complete backend rewrite of a Django-based system, driving significant improvements in performance, scalability, and overall platform efficiency."
     - "Single-handedly built and deployed a Grafana and Prometheus monitoring system, improving machine and API performance tracking, leading to a 70% reduction in response time for critical issues."
