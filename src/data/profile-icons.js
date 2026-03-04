@@ -7,7 +7,8 @@ export const PROFILE_ICON_MAP = {
   instagram: 'simple-icons:instagram',
   spotify: 'simple-icons:spotify',
   bluesky: 'simple-icons:bluesky',
-  tiktok: 'simple-icons:tiktok'
+  tiktok: 'simple-icons:tiktok',
+  substack: 'simple-icons:substack'
 }
 
 const ALIASES = {

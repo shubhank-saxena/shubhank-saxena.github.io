@@ -9,8 +9,10 @@ export const SKILL_ICON_MAP = {
   cplusplus: "devicon:cplusplus",
   python: "devicon:python",
   ruby: "devicon:ruby",
-  go: "devicon:go",
+  go: "devicon:go-wordmark",
   rust: "devicon:rust",
+
+  bash: "devicon:bash",
 
   // Web Development
   html: 'devicon:html5',
@@ -24,17 +26,33 @@ export const SKILL_ICON_MAP = {
   flutter: "devicon:flutter",
   astro: "devicon:astro",
 
+  // Frameworks
+  django: 'devicon:djangorest',
+  flask: 'devicon:flask',
+  pytorch: 'devicon:pytorch',
+  terraform: 'devicon:terraform',
+  ansible: 'devicon:ansible',
+
   // Tools & Ecosystem
   git: 'devicon:git',
   github: 'devicon:github',
   linux: 'devicon:linux',
   docker: 'devicon:docker',
+  kubernetes: 'devicon:kubernetes',
+  grafana: 'devicon:grafana',
+  prometheus: 'devicon:prometheus',
+  elasticsearch: 'devicon:elasticsearch',
 
   // Databases
   mysql: 'devicon:mysql',
   postgresql: 'devicon:postgresql',
   mongodb: 'devicon:mongodb',
   sqlite: 'devicon:sqlite',
+  redis: 'devicon:redis',
+
+  // Cloud
+  gcp: 'devicon:googlecloud',
+  aws: 'devicon:amazonwebservices',
 
   // Mobile & App Dev
   swift: 'devicon:swift',
@@ -46,7 +64,7 @@ export const SKILL_ICON_MAP = {
   jupyter: 'devicon:jupyter',
   julia: 'devicon:julia',
   r: 'devicon:r',
-  pandas: 'deicon:pandas',
+  pandas: 'devicon:pandas',
   numpy: 'devicon:numpy',
 
   // Creative / Interdisciplinary

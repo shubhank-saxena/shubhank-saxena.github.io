@@ -3,146 +3,435 @@
     "theme": "professional"
   },
   "basics": {
-    "name": "John Doe",
+    "name": "Shubhank Saxena",
     "label": "Software Engineer",
-    "email": "johndoe@example.com",
-    "phone": "+1 234 567 890",
-    "url": "https://johndoe.dev",
+    "email": "saxena.shubhank.19@gmail.com",
+    "phone": "+1 857 763 7586",
+    "url": "https://shubhank.dev",
     "image": "/profile.jpg",
-    "summary": "Passionate developer with 5+ years of experience in building web applications.",
+    "summary": "I'm a software engineer focused on building scalable products and systems that solve real problems. With a strong background in backend development, system architecture, and open-source collaboration, I enjoy turning complex ideas into reliable, thoughtful software. I like working across the stack, from designing robust infrastructure to shipping user-facing products, and building technology that connects with people and makes a real difference.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Palo Alto",
+      "city": "Boston",
       "countryCode": "US",
-      "region": "California"
+      "region": "MA"
     },
     "profiles": [
       {
-        "network": "LinkedIn",
-        "username": "johndoe",
-        "url": "https://linkedin.com/in/johndoe"
+        "network": "GitHub",
+        "username": "shubhank-saxena",
+        "url": "https://github.com/shubhank-saxena"
       },
       {
-        "network": "GitHub",
-        "username": "jsonresume",
-        "url": "https://github.com/jsonresume"
+        "network": "LinkedIn",
+        "username": "shubhank-saxena",
+        "url": "https://linkedin.com/in/shubhank-saxena"
+      },
+      {
+        "network": "X",
+        "username": "0xshubhank",
+        "url": "https://x.com/0xshubhank"
+      },
+      {
+        "network": "Substack",
+        "username": "shubhanksaxena",
+        "url": "https://shubhanksaxena.substack.com/"
       }
     ]
   },
   "work": [
     {
-      "name": "Tech Company",
-      "position": "Senior Developer",
-      "url": "https://techcompany.com",
-      "startDate": "2020-06-01",
-      "summary": "Developing full-stack applications using JavaScript, React, and Node.js."
+      "name": "First Round's On Me",
+      "position": "Vice President of Technology",
+      "url": "https://www.linkedin.com/company/firstroundsonme",
+      "startDate": "2025-09-01",
+      "summary": "",
+      "highlights": [
+        "Lead a cross-functional team of 4 (1 designer, 2 frontend engineers, 1 backend intern), aligning product, design, and engineering",
+        "Leading AI-powered incentives to drive personalized recommendations and engagement across the platform",
+        "Led technology pivot to a social-app business model; architected and delivered a production-ready backend in 2 months",
+        "Deployed open-source observability stack and built custom dashboards for application performance monitoring",
+        "Designed and launched internal analytics and B2B partner dashboards for actionable data insights",
+        "Owned blue-green deployment architecture with Tailscale-powered private VPN for zero-downtime releases"
+      ]
     },
     {
-      "name": "Web Agency",
-      "position": "Frontend Developer",
-      "url": "https://webagency.com",
-      "startDate": "2018-01-01",
-      "endDate": "2020-05-01",
-      "summary": "Worked on various client projects, focusing on responsive design and performance optimization."
+      "name": "First Round's On Me",
+      "position": "Backend Engineer Intern",
+      "url": "https://www.linkedin.com/company/firstroundsonme",
+      "startDate": "2024-05-01",
+      "endDate": "2024-12-01",
+      "summary": "",
+      "highlights": [
+        "Led end-to-end backend rewrite of a Django-based system, improving performance, scalability, and platform efficiency",
+        "Built and deployed a Grafana and Prometheus monitoring stack, contributing to 70% reduction in mean time to resolve critical issues",
+        "Developed an internal dashboard with natural-language query to database for self-serve data insights",
+        "Optimized database models and queries, reducing response times by 50% and improving data layer performance",
+        "Executed zero-downtime migration of 150k+ user records from legacy to new platform"
+      ]
     },
     {
-      "name": "Startup Inc.",
-      "position": "Intern",
-      "url": "https://startupinc.com",
-      "startDate": "2017-06-01",
-      "endDate": "2017-12-01",
-      "summary": "Assisted in the development of a web application for internal use."
-    }
-  ],
-  "volunteer": [
+      "name": "Bullwhip",
+      "position": "Backend Engineer",
+      "url": "https://www.linkedin.com/company/bullwhip",
+      "startDate": "2023-06-01",
+      "endDate": "2023-08-01",
+      "summary": "",
+      "highlights": [
+        "Developed an ETL pipeline that processed over 10,000 media articles daily, reporting performance metrics including clicks and views",
+        "Engineered an LLM-based system that processed data from 10 different API endpoints, enabling conversational data querying"
+      ]
+    },
     {
-      "organization": "Open Source Initiative",
-      "position": "Contributor",
-      "url": "https://opensource.org",
+      "name": "Wall Inc.",
+      "position": "Software Engineering Lead",
+      "url": "https://www.linkedin.com/company/wall-app",
+      "startDate": "2022-11-01",
+      "endDate": "2023-06-01",
+      "summary": "",
+      "highlights": [
+        "Developed on-chain data gathering and community interaction features, attracting 10,000+ users in 48 hours and boosting engagement by 30%",
+        "Led a team of 5 developers delivering an end-to-end application, achieving 20% increase in operational efficiency and 15% reduction in time-to-market"
+      ]
+    },
+    {
+      "name": "Wall Inc.",
+      "position": "Software Engineer",
+      "url": "https://www.linkedin.com/company/wall-app",
+      "startDate": "2022-01-01",
+      "endDate": "2022-11-01",
+      "summary": "",
+      "highlights": [
+        "Developed queryable indexers for Ethereum and Polygon, processing over 1M transactions daily with rich off-chain metadata",
+        "Led dockerization of 3 key services, enhancing deployment efficiency by 40% and reducing server downtime by 50%",
+        "Optimized ETL pipelines, reducing storage costs by 60% through migration of 3TB+ legacy data to AWS S3"
+      ]
+    },
+    {
+      "name": "Lime Health Inc.",
+      "position": "Backend Engineer (Contract)",
+      "url": "https://www.linkedin.com/company/limehealth",
+      "startDate": "2021-11-01",
+      "endDate": "2022-01-01",
+      "summary": "",
+      "highlights": [
+        "Created a survey healthcare and patient (OPD) form management tool using Ruby on Rails, streamlining the survey process"
+      ]
+    },
+    {
+      "name": "Google Summer of Code",
+      "position": "Open Source Developer",
+      "url": "https://www.linkedin.com/company/google-summer-of-code-2019",
+      "startDate": "2021-05-01",
+      "endDate": "2021-07-01",
+      "summary": "",
+      "highlights": [
+        "Segregated production and development environments for better local development without disturbing production CI",
+        "Integrated CI checks on code quality and unit tests, ensuring robustness and reliability",
+        "Added internationalization support for users from various geographies",
+        "Created a CLI-based tool for interacting with MediaCMS API endpoints"
+      ]
+    },
+    {
+      "name": "Indian Institute of Technology, Delhi",
+      "position": "Research Intern",
+      "url": "https://www.linkedin.com/school/iitdelhi/",
       "startDate": "2021-01-01",
-      "summary": "Contributing to open-source projects and helping maintain documentation."
+      "endDate": "2021-07-01",
+      "summary": "",
+      "highlights": [
+        "Created an AI-driven inflatable jacket to assist autistic individuals during anxiety attacks, monitoring physiological and bio-signals and simulating a hug to provide comfort"
+      ]
+    },
+    {
+      "name": "Major League Hacking",
+      "position": "Open Source Fellow",
+      "url": "https://www.linkedin.com/company/major-league-hacking",
+      "startDate": "2020-10-01",
+      "endDate": "2020-12-01",
+      "summary": "",
+      "highlights": [
+        "Selected as one of 100 from 20,000 applicants for the Open Source Fellowship",
+        "Created WellIO.jl, a Julia package for parsing and reading ASCII Log Oil well drilling data"
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Tech",
-      "area": "Computer Science",
-      "studyType": "Bachelor of Science",
-      "startDate": "2016-09-01",
-      "endDate": "2020-06-01",
+      "institution": "Northeastern University",
+      "area": "Information Systems",
+      "studyType": "Master of Science",
+      "startDate": "2023-09-01",
+      "endDate": "2025-08-01",
+      "score": "3.6/4.0",
       "courses": [
-        "DB1101 - Basic SQL"
+        "Machine Learning",
+        "Networking and Cloud Architecture",
+        "Data Structures & Algorithms",
+        "NLP and LLM",
+        "Agile Software Engineering"
       ]
+    },
+    {
+      "institution": "Thapar Institute of Engineering and Technology",
+      "area": "Electronics & Communication Engineering",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2017-08-01",
+      "endDate": "2021-05-01"
     }
   ],
   "skills": [
+    { "name": "Python" },
+    { "name": "C" },
+    { "name": "C++" },
+    { "name": "JavaScript" },
+    { "name": "TypeScript" },
+    { "name": "Bash" },
+    { "name": "Go" },
+    { "name": "Ruby" },
+    { "name": "Django" },
+    { "name": "Flask" },
+    { "name": "React" },
+    { "name": "Node" },
+    { "name": "PyTorch" },
+    { "name": "Pandas" },
+    { "name": "NumPy" },
+    { "name": "Terraform" },
+    { "name": "Ansible" },
+    { "name": "Docker" },
+    { "name": "Kubernetes" },
+    { "name": "Git" },
+    { "name": "GitHub" },
+    { "name": "Linux" },
+    { "name": "PostgreSQL" },
+    { "name": "Elasticsearch" },
+    { "name": "Redis" },
+    { "name": "Grafana" },
+    { "name": "Prometheus" },
+    { "name": "AWS" },
+    { "name": "GCP" }
+  ],
+  "volunteer": [
     {
-      "name": "Astro",
-      "level": "Proficient",
-      "keywords": ["Frontend", "Static Site Generation"]
+      "organization": "IEEE NCU",
+      "position": "Guest Speaker",
+      "startDate": "2021-06-01",
+      "endDate": "2021-06-01",
+      "summary": "Gave a talk on Open Source learning and contributions."
     },
     {
-      "name": "HTML",
-      "level": "Advanced",
-      "keywords": ["JavaScript", "React", "Node.js"]
+      "organization": "DSC NSEC",
+      "position": "Open Source Mentor — Winter of Code",
+      "startDate": "2020-12-01",
+      "endDate": "2021-01-01",
+      "summary": "Mentored students for the Tesseract open source project initiative."
     },
     {
-      "name": "CSS",
-      "level": "Advanced",
-      "keywords": ["Frontend", "Responsive Design"]
+      "organization": "Mozilla",
+      "position": "Open Source Developer",
+      "startDate": "2020-01-01",
+      "endDate": "2020-06-01",
+      "summary": "Contributed to Treeherder and OpenWPM projects."
     },
     {
-      "name": "JavaScript",
-      "level": "Intermediate",
-      "keywords": ["ES6", "Async/Await"]
+      "organization": "HACKTIET",
+      "position": "Head Organizer",
+      "startDate": "2019-10-01",
+      "endDate": "2019-11-01",
+      "summary": "Organized North India's largest hackathon with 50+ participants from 15+ cities. Sponsors included GitHub and Wolfram Alpha."
     },
     {
-      "name": "Git",
-      "level": "Intermediate",
-      "keywords": ["Version Control", "Collaboration"]
+      "organization": "GirlScript Patiala",
+      "position": "Core Member",
+      "startDate": "2019-07-01",
+      "endDate": "2020-07-01",
+      "summary": "Conducted girls-focused hackathons and industry expert talks."
     },
     {
-      "name": "GitHub",
-      "level": "Expert",
-      "keywords": ["Version Control", "Collaboration"]
+      "organization": "Developer Student Club Thapar",
+      "position": "Founder and Lead",
+      "startDate": "2019-07-01",
+      "endDate": "2020-08-01",
+      "summary": "Founded DSC chapter. Conducted programming boot camps, workshops, and the \"RawTalent\" podcast series."
     },
     {
-      "name": "Node.js",
-      "level": "Intermediate",
-      "keywords": ["Backend", "API Development"]
+      "organization": "Amazon India",
+      "position": "Alexa Student Influencer",
+      "startDate": "2019-10-01",
+      "endDate": "2020-08-01",
+      "summary": "Promoted Alexa skills development and voice-first technology among students."
     },
     {
-      "name": "Frontend",
-      "level": "Intermediate",
-      "keywords": ["React", "Svelte", "tailwind"]
-    },
-    {
-      "name": "TypeScript",
-      "level": "Intermediate",
-      "keywords": ["JavaScript", "Static Typing"]
+      "organization": "Har Hath Kalam",
+      "position": "Teaching Professional",
+      "startDate": "2018-01-01",
+      "endDate": "2019-03-01",
+      "summary": "Taught underprivileged students mathematics, science, and social studies."
     }
   ],
   "languages": [
     {
       "language": "English",
       "fluency": "Native"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Native"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Braille Reading Device",
+      "publisher": "Indian Patent Office (IN 202011048731)",
+      "releaseDate": "2020-11-01"
+    },
+    {
+      "name": "Communication Device for Visually Impaired People",
+      "publisher": "Indian Patent Office (IN 201911002961)",
+      "releaseDate": "2019-01-01"
+    },
+    {
+      "name": "System to Provide Assistance in Autism Spectrum Disorder",
+      "publisher": "Indian Patent Office (IN 202111028802)",
+      "releaseDate": "2021-06-01"
+    }
+  ],
+  "awards": [
+    {
+      "title": "2nd Runner-up, Unlock Protocol and IPFS Pool Bounty",
+      "awarder": "ETH New York",
+      "date": "2023-09-01"
+    },
+    {
+      "title": "Winner, Dune Analytics Category",
+      "awarder": "ETH India 2022 (EthGlobal)",
+      "date": "2022-12-01"
+    },
+    {
+      "title": "Honorary Award, HackDelhi UltraHack 19",
+      "awarder": "91 Springboard",
+      "date": "2019-01-01"
+    },
+    {
+      "title": "Winner, Smart India Hackathon 2019 (Software Edition)",
+      "awarder": "Government of India — worked with CISCO on Meraki Camera data analysis",
+      "date": "2019-03-01"
+    },
+    {
+      "title": "Special Mention, HackData 2.0",
+      "awarder": "Shiv Nadar University",
+      "date": "2019-01-01"
+    },
+    {
+      "title": "Winner, Hack36",
+      "awarder": "Motilal Nehru National Institute of Engineering and Technology, Allahabad",
+      "date": "2019-01-01"
+    },
+    {
+      "title": "2nd Runner-up, Innovacer HackerCup (Hackercamp 18)",
+      "awarder": "Innovacer and Amazon — NCR's biggest hack",
+      "date": "2018-01-01"
+    },
+    {
+      "title": "Winner, HashHacks 3.0",
+      "awarder": "Delhi University CIC — Delhi's biggest Hackathon",
+      "date": "2019-01-01"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Machine Learning - Introduction Nanodegree",
+      "issuer": "Udacity",
+      "date": "2020-01-01"
+    },
+    {
+      "name": "Natural Language Processing Nanodegree",
+      "issuer": "Udacity",
+      "date": "2020-01-01"
+    },
+    {
+      "name": "React: Getting Started",
+      "issuer": "Pluralsight",
+      "date": "2020-01-01"
+    },
+    {
+      "name": "Intermediate Python for Data Science",
+      "issuer": "DataCamp",
+      "date": "2019-01-01"
+    },
+    {
+      "name": "Python Data Science Toolbox",
+      "issuer": "DataCamp",
+      "date": "2019-01-01"
+    },
+    {
+      "name": "Programming for Everybody (Getting Started with Python)",
+      "issuer": "Coursera",
+      "date": "2019-01-01"
     }
   ],
   "projects": [
     {
-      "name": "Portfolio Website",
-      "description": "A personal website showcasing my work and skills.",
+      "name": "Cisco Meraki DevNet App",
+      "description": "Flutter-based cross-platform app for Meraki camera data analysis and queue prediction using LSTM.",
+      "isActive": false,
+      "highlights": [
+        "Integrated Google Assistant, Alexa, and automated SMS/email alerts",
+        "Local-language support for accessibility",
+        "Winner at Smart India Hackathon 2019"
+      ]
+    },
+    {
+      "name": "BlindSpot",
+      "description": "All-in-one assistive device for visually impaired users: scene description, OCR, navigation, path detection, and integrated payments.",
+      "isActive": false,
+      "highlights": [
+        "Targeted at low-income users",
+        "Multiple AI models for different assistive tasks",
+        "Integrated payment system for accessibility"
+      ]
+    },
+    {
+      "name": "Pothole Detection",
+      "description": "Computer vision system for detecting potholes using Mask R-CNN.",
       "isActive": true,
       "highlights": [
-        "Built with love using the Astrolio template",
-        "Responsive design using Astro, Typescript, and Ninja Keys",
-        "Integrated with GitHub API to display projects",
-        "Employed the JSON Resume format for easy updates"
+        "44 stars on GitHub",
+        "Built with Python, TensorFlow, and Mask R-CNN",
+        "Real-world application for road safety"
       ],
-      "github": "https://github.com/jsonresume",
-      "url": "https://jsonresume.org"
+      "github": "https://github.com/shubhank-saxena/Pothole-Detection"
+    },
+    {
+      "name": "ASL Translator",
+      "description": "Sign language alphabet recognizer using Python, OpenCV, and TensorFlow with InceptionV3 CNN for classification.",
+      "isActive": false,
+      "highlights": [
+        "Real-time sign language recognition via webcam",
+        "Trained InceptionV3 model for classification",
+        "Built with OpenCV and TensorFlow"
+      ],
+      "github": "https://github.com/shubhank-saxena/ASL-Classifier"
+    },
+    {
+      "name": "Speech Recognition DNN",
+      "description": "Deep neural network for end-to-end automatic speech recognition pipeline using LibreSpeech dataset.",
+      "isActive": false,
+      "highlights": [
+        "Converts raw audio to feature representations for ASR",
+        "Maps audio features to transcribed text",
+        "Trained on LibreSpeech dataset"
+      ]
+    },
+    {
+      "name": "Stress-ng REST Server",
+      "description": "Flask-based REST server wrapping stress-ng for configurable compute, storage, and network stress tests with time-varying parameters.",
+      "isActive": true,
+      "highlights": [
+        "REST API wrapper around stress-ng CLI tool",
+        "Support for time-varying stress tests",
+        "Dockerized for easy deployment"
+      ],
+      "github": "https://github.com/shubhank-saxena/stress-ng-server"
     }
   ]
 }
-  

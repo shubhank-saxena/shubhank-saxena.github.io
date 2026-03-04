@@ -1,0 +1,66 @@
+---
+import Section from "../Section.astro"
+import { certificates as certsData } from "@cv"
+import type { Certificates } from "@/data/cv"
+const certs = certsData as Certificates[]
+---
+
+<Section title="Certifications">
+  <ul>
+    {
+      certs.map(({ name, issuer, url }) => {
+        return (
+          <li>
+            <article>
+              <header>
+                <div>
+                  <h3>
+                    {url ? (
+                      <a href={url} target="_blank">{name}</a>
+                    ) : (
+                      name
+                    )}
+                  </h3>
+                  <h4>{issuer}</h4>
+                </div>
+              </header>
+            </article>
+          </li>
+        )
+      })
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  article h3 {
+    font-weight: 500;
+    color: #111;
+  }
+
+  article a {
+    color: #111;
+  }
+
+  article a:hover {
+    text-decoration: underline;
+  }
+
+  article h4 {
+    color: #555;
+    font-weight: 400;
+    font-size: 0.85rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+</style>
