@@ -371,6 +371,17 @@
   ],
   "projects": [
     {
+      "name": "Twitter/X MCP Server",
+      "description": "MCP server enabling AI assistants to interact with Twitter/X accounts using browser cookie authentication instead of API keys.",
+      "isActive": true,
+      "highlights": [
+        "No API key required - uses cookie-based auth via twikit",
+        "20+ tools: tweets, engagement, discovery, media support",
+        "Compatible with Claude Code and Claude Desktop"
+      ],
+      "github": "https://github.com/shubhank-saxena/twitter-account-mcp"
+    },
+    {
       "name": "Cisco Meraki DevNet App",
       "description": "Flutter-based cross-platform app for Meraki camera data analysis and queue prediction using LSTM.",
       "isActive": false,
