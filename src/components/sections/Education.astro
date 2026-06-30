@@ -67,4 +67,16 @@ const education = educationData as Education[]
       text-align: right;
     }
   }
+
+  @media (width <= 480px) {
+    header {
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    time {
+      min-width: 0;
+      text-align: left;
+    }
+  }
 </style>

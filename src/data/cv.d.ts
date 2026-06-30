@@ -7,6 +7,7 @@ export interface CV {
   readonly certificates?: Certificates[];
   readonly publications?: Publications[];
   readonly skills?: Skills[];
+  readonly writing?: Writing;
   readonly languages?: Languages[];
   readonly interests?: Interests[];
   readonly references?: References[];
@@ -42,6 +43,7 @@ interface Profiles {
 
 interface Work {
   name: string;
+  description?: string;
   position: string;
   url?: string;
   startDate: DateStr;
@@ -94,9 +96,21 @@ interface Publications {
 }
 
 interface Skills {
-  name: string;
-  level?: string;
-  keywords?: string[];
+  category: string;
+  items: string[];
+}
+
+interface Writing {
+  url: string;
+  blurb?: string;
+  posts?: WritingPost[];
+}
+
+interface WritingPost {
+  title: string;
+  url: string;
+  date?: DateStr;
+  description?: string;
 }
 
 interface Languages {

@@ -37,8 +37,6 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(" • ")
             <a
               href={`mailto:${email}`}
               title={`Email ${name} at ${email}`}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <Icon name="mail" />
             </a>
@@ -48,9 +46,7 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(" • ")
           phone && (
             <a
               href={`tel:${phone}`}
-              title={`Call ${name} at the number ${phone}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              title={`Call ${name} at ${phone}`}
             >
               <Icon name="phone" />
             </a>
@@ -63,7 +59,7 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(" • ")
             return (
               <a
                 href={url}
-                title={`Visit ${name}'s on ${network}`}
+                title={`Visit ${name} on ${network}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -98,8 +94,8 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(" • ")
   }
 
   .hero-icon {
-    width: 250;
-    height: 250;
+    width: 16px;
+    height: 16px;
     display: inline-block;
     vertical-align: middle;
   }

@@ -1,0 +1,88 @@
+---
+import Section from "../Section.astro"
+import { writing as writingData } from "@cv"
+import type { Writing } from "@/data/cv"
+
+const writing = writingData as Writing | undefined
+const posts = writing?.posts ?? []
+---
+
+{
+  writing?.url && (
+    <Section title="Writing">
+      {writing.blurb && <p class="blurb">{writing.blurb}</p>}
+
+      {posts.length > 0 && (
+        <ul>
+          {posts.map(({ title, url, date, description }) => (
+            <li>
+              <a href={url} target="_blank" rel="noopener noreferrer">
+                <span class="post-title">{title}</span>
+                {date && <time>{new Date(date).getFullYear()}</time>}
+              </a>
+              {description && <p class="post-description">{description}</p>}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      <a class="read-more" href={writing.url} target="_blank" rel="noopener noreferrer">
+        Read on Substack →
+      </a>
+    </Section>
+  )
+}
+
+<style>
+  .blurb {
+    margin-bottom: 12px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  li a {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    color: #111;
+  }
+
+  li a:hover .post-title {
+    text-decoration: underline;
+  }
+
+  .post-title {
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  li time {
+    color: #777;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+  }
+
+  .post-description {
+    margin-top: 2px;
+    font-size: 0.8rem;
+  }
+
+  .read-more {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .read-more:hover {
+    color: #111;
+    border-color: #999;
+  }
+</style>

@@ -84,15 +84,17 @@ const { basics, work = [], education = [], skills = [], projects = [], volunteer
 const workContext = work.map(w => {
   const dates = w.endDate ? `${w.startDate} to ${w.endDate}` : `${w.startDate} to Present`;
   const bullets = w.highlights?.length ? w.highlights.map(h => `  - ${h}`).join('\n') : w.summary || '';
-  return `${w.name} — ${w.position} (${dates})\n${bullets}`;
+  return `${w.name}, ${w.position} (${dates})\n${bullets}`;
 }).join('\n\n');
 
 const eduContext = education.map(e => {
   const dates = e.endDate ? `${e.startDate} to ${e.endDate}` : `${e.startDate} to Present`;
-  return `${e.institution} — ${e.studyType}, ${e.area} (${dates})${e.score ? ` GPA: ${e.score}` : ''}${e.courses?.length ? `\n  Courses: ${e.courses.join(', ')}` : ''}`;
+  return `${e.institution}, ${e.studyType}, ${e.area} (${dates})${e.score ? ` GPA: ${e.score}` : ''}${e.courses?.length ? `\n  Courses: ${e.courses.join(', ')}` : ''}`;
 }).join('\n');
 
-const skillNames = skills.map(s => s.name).join(', ');
+const skillNames = skills
+  .flatMap(s => (s as any).items ?? ((s as any).name ? [(s as any).name] : []))
+  .join(', ');
 
 const projectContext = projects.map(p => {
   const desc = p.description || '';
@@ -101,13 +103,13 @@ const projectContext = projects.map(p => {
   return `${p.name}: ${desc}${highlights ? '\n' + highlights : ''}${links ? '\n  Links: ' + links : ''}`;
 }).join('\n\n');
 
-const volunteerContext = volunteer.map(v => `${v.organization} — ${v.position}: ${v.summary || ''}`).join('\n');
+const volunteerContext = volunteer.map(v => `${v.organization}, ${v.position}: ${v.summary || ''}`).join('\n');
 
 const patentContext = publications.map(p => `${p.name} (${p.publisher})`).join('\n');
 
-const awardContext = awards.map(a => `${a.title} — ${a.awarder} (${new Date(a.date).getFullYear()})`).join('\n');
+const awardContext = awards.map(a => `${a.title}, ${a.awarder} (${new Date(a.date).getFullYear()})`).join('\n');
 
-const certContext = certificates.map(c => `${c.name} — ${c.issuer}`).join('\n');
+const certContext = certificates.map(c => `${c.name}, ${c.issuer}`).join('\n');
 
 const profileLinks = profiles.map(p => `${p.network}: ${p.url}`).join('\n');
 

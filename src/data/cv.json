@@ -4,12 +4,12 @@
   },
   "basics": {
     "name": "Shubhank Saxena",
-    "label": "Software Engineer",
+    "label": "Software Engineer, Backend & Infrastructure",
     "email": "saxena.shubhank.19@gmail.com",
     "phone": "+1 857 763 7586",
     "url": "https://shubhank.dev",
     "image": "/profile.jpg",
-    "summary": "I'm a software engineer focused on building scalable products and systems that solve real problems. With a strong background in backend development, system architecture, and open-source collaboration, I enjoy turning complex ideas into reliable, thoughtful software. I like working across the stack, from designing robust infrastructure to shipping user-facing products, and building technology that connects with people and makes a real difference.",
+    "summary": "I'm a backend and infrastructure engineer. Most of my work lives in the layer that keeps products running: rewriting services for scale, standing up observability, and shipping zero-downtime migrations and deploys. I currently lead technology at First Round's On Me, an early-stage social-app startup, where I took the backend from a business pivot to production in two months. Running alongside that is a longer thread I care about: assistive technology. I hold three patents and have built tools for people who are blind or navigating autism, turning hard accessibility problems into software that ships.",
     "location": {
       "city": "Boston",
       "countryCode": "US",
@@ -41,80 +41,86 @@
   "work": [
     {
       "name": "First Round's On Me",
+      "description": "Early-stage social-app startup",
       "position": "Vice President of Technology",
       "url": "https://www.linkedin.com/company/firstroundsonme",
       "startDate": "2025-09-01",
       "summary": "",
       "highlights": [
         "Lead a cross-functional team of 4 (1 designer, 2 frontend engineers, 1 backend intern), aligning product, design, and engineering",
-        "Leading AI-powered incentives to drive personalized recommendations and engagement across the platform",
-        "Led technology pivot to a social-app business model; architected and delivered a production-ready backend in 2 months",
-        "Deployed open-source observability stack and built custom dashboards for application performance monitoring",
-        "Designed and launched internal analytics and B2B partner dashboards for actionable data insights",
-        "Owned blue-green deployment architecture with Tailscale-powered private VPN for zero-downtime releases"
+        "Building an AI-powered incentives system that drives personalized recommendations across the platform",
+        "Led the technology pivot to a social-app business model; architected and shipped a production-ready backend in 2 months",
+        "Deployed an open-source observability stack with custom dashboards for application performance and uptime monitoring",
+        "Designed and launched internal analytics and B2B partner dashboards",
+        "Built blue-green deployments over a Tailscale-backed private network for zero-downtime releases"
       ]
     },
     {
       "name": "First Round's On Me",
-      "position": "Backend Engineer Intern",
+      "description": "Early-stage social-app startup",
+      "position": "Backend Engineer (Intern)",
       "url": "https://www.linkedin.com/company/firstroundsonme",
       "startDate": "2024-05-01",
       "endDate": "2024-12-01",
       "summary": "",
       "highlights": [
-        "Led end-to-end backend rewrite of a Django-based system, improving performance, scalability, and platform efficiency",
-        "Built and deployed a Grafana and Prometheus monitoring stack, contributing to 70% reduction in mean time to resolve critical issues",
-        "Developed an internal dashboard with natural-language query to database for self-serve data insights",
-        "Optimized database models and queries, reducing response times by 50% and improving data layer performance",
-        "Executed zero-downtime migration of 150k+ user records from legacy to new platform"
+        "Led an end-to-end rewrite of a Django-based backend, restructuring it for scale",
+        "Stood up a Grafana + Prometheus monitoring stack, cutting mean time to resolve critical incidents by ~70%",
+        "Built an internal dashboard with natural-language querying over the database for self-serve insights",
+        "Optimized database models and queries, cutting response times by ~50%",
+        "Ran a zero-downtime migration of 150k+ user records from the legacy platform"
       ]
     },
     {
       "name": "Bullwhip",
-      "position": "Backend Engineer",
+      "description": "News & media analytics",
+      "position": "Backend Engineer (Internship)",
       "url": "https://www.linkedin.com/company/bullwhip",
       "startDate": "2023-06-01",
       "endDate": "2023-08-01",
       "summary": "",
       "highlights": [
-        "Developed an ETL pipeline that processed over 10,000 media articles daily, reporting performance metrics including clicks and views",
-        "Engineered an LLM-based system that processed data from 10 different API endpoints, enabling conversational data querying"
+        "Built an ETL pipeline processing 10,000+ media articles daily, surfacing performance metrics like clicks and views",
+        "Engineered an LLM-based system over 10 API sources to enable conversational data querying"
       ]
     },
     {
       "name": "Wall Inc.",
+      "description": "Web3 social platform",
       "position": "Software Engineering Lead",
       "url": "https://www.linkedin.com/company/wall-app",
       "startDate": "2022-11-01",
       "endDate": "2023-06-01",
       "summary": "",
       "highlights": [
-        "Developed on-chain data gathering and community interaction features, attracting 10,000+ users in 48 hours and boosting engagement by 30%",
-        "Led a team of 5 developers delivering an end-to-end application, achieving 20% increase in operational efficiency and 15% reduction in time-to-market"
+        "Shipped on-chain data and community features that drew 10,000+ users in 48 hours",
+        "Led a team of 5 engineers delivering the application end to end, from design to launch"
       ]
     },
     {
       "name": "Wall Inc.",
+      "description": "Web3 social platform",
       "position": "Software Engineer",
       "url": "https://www.linkedin.com/company/wall-app",
       "startDate": "2022-01-01",
       "endDate": "2022-11-01",
       "summary": "",
       "highlights": [
-        "Developed queryable indexers for Ethereum and Polygon, processing over 1M transactions daily with rich off-chain metadata",
-        "Led dockerization of 3 key services, enhancing deployment efficiency by 40% and reducing server downtime by 50%",
-        "Optimized ETL pipelines, reducing storage costs by 60% through migration of 3TB+ legacy data to AWS S3"
+        "Built queryable indexers for Ethereum and Polygon, processing 1M+ transactions daily with off-chain metadata",
+        "Containerized 3 core services with Docker, streamlining deploys and reducing downtime",
+        "Migrated 3TB+ of legacy data to AWS S3 and tuned ETL pipelines, cutting storage costs by ~60%"
       ]
     },
     {
       "name": "Lime Health Inc.",
+      "description": "Healthcare technology",
       "position": "Backend Engineer (Contract)",
       "url": "https://www.linkedin.com/company/limehealth",
       "startDate": "2021-11-01",
       "endDate": "2022-01-01",
       "summary": "",
       "highlights": [
-        "Created a survey healthcare and patient (OPD) form management tool using Ruby on Rails, streamlining the survey process"
+        "Built a healthcare survey and patient (OPD) form-management tool in Ruby on Rails, streamlining the survey process"
       ]
     },
     {
@@ -125,10 +131,10 @@
       "endDate": "2021-07-01",
       "summary": "",
       "highlights": [
-        "Segregated production and development environments for better local development without disturbing production CI",
-        "Integrated CI checks on code quality and unit tests, ensuring robustness and reliability",
-        "Added internationalization support for users from various geographies",
-        "Created a CLI-based tool for interacting with MediaCMS API endpoints"
+        "Separated production and development environments for safer local development without disturbing the production CI",
+        "Added CI checks for code quality and unit tests, improving robustness and reliability",
+        "Added internationalization support for users across geographies",
+        "Built a CLI tool for interacting with the MediaCMS API"
       ]
     },
     {
@@ -139,7 +145,7 @@
       "endDate": "2021-07-01",
       "summary": "",
       "highlights": [
-        "Created an AI-driven inflatable jacket to assist autistic individuals during anxiety attacks, monitoring physiological and bio-signals and simulating a hug to provide comfort"
+        "Built an AI-driven inflatable jacket to assist autistic individuals during anxiety attacks, monitoring physiological and bio-signals and simulating a hug to provide comfort"
       ]
     },
     {
@@ -151,7 +157,7 @@
       "summary": "",
       "highlights": [
         "Selected as one of 100 from 20,000 applicants for the Open Source Fellowship",
-        "Created WellIO.jl, a Julia package for parsing and reading ASCII Log Oil well drilling data"
+        "Created WellIO.jl, a Julia package for parsing and reading ASCII Log oil-well drilling data"
       ]
     }
   ],
@@ -180,78 +186,78 @@
     }
   ],
   "skills": [
-    { "name": "Python" },
-    { "name": "C" },
-    { "name": "C++" },
-    { "name": "JavaScript" },
-    { "name": "TypeScript" },
-    { "name": "Bash" },
-    { "name": "Go" },
-    { "name": "Ruby" },
-    { "name": "Django" },
-    { "name": "Flask" },
-    { "name": "React" },
-    { "name": "Node" },
-    { "name": "PyTorch" },
-    { "name": "Pandas" },
-    { "name": "NumPy" },
-    { "name": "Terraform" },
-    { "name": "Ansible" },
-    { "name": "Docker" },
-    { "name": "Kubernetes" },
-    { "name": "Git" },
-    { "name": "GitHub" },
-    { "name": "Linux" },
-    { "name": "PostgreSQL" },
-    { "name": "Elasticsearch" },
-    { "name": "Redis" },
-    { "name": "Grafana" },
-    { "name": "Prometheus" },
-    { "name": "AWS" },
-    { "name": "GCP" }
+    {
+      "category": "Languages",
+      "items": ["Python", "Go", "TypeScript", "JavaScript", "C++", "C", "Ruby", "Bash"]
+    },
+    {
+      "category": "Backend & Frameworks",
+      "items": ["Django", "Flask", "Node", "React"]
+    },
+    {
+      "category": "Data & Storage",
+      "items": ["PostgreSQL", "Redis", "Elasticsearch"]
+    },
+    {
+      "category": "Infra & DevOps",
+      "items": ["Docker", "Kubernetes", "Terraform", "Ansible", "Linux", "Git"]
+    },
+    {
+      "category": "Cloud & Observability",
+      "items": ["AWS", "GCP", "Grafana", "Prometheus"]
+    },
+    {
+      "category": "ML & Data Science",
+      "items": ["PyTorch", "Pandas", "NumPy"]
+    }
   ],
+  "writing": {
+    "url": "https://shubhanksaxena.substack.com/",
+    "blurb": "I write about backend engineering, infrastructure, and building with AI: lessons pulled from shipping real systems.",
+    "posts": []
+  },
   "volunteer": [
     {
       "organization": "IEEE NCU",
       "position": "Guest Speaker",
       "startDate": "2021-06-01",
       "endDate": "2021-06-01",
-      "summary": "Gave a talk on Open Source learning and contributions."
+      "summary": "Gave a talk on open-source learning and contributions."
     },
     {
       "organization": "DSC NSEC",
-      "position": "Open Source Mentor — Winter of Code",
+      "position": "Open Source Mentor, Winter of Code",
       "startDate": "2020-12-01",
       "endDate": "2021-01-01",
-      "summary": "Mentored students for the Tesseract open source project initiative."
+      "summary": "Mentored students for the Tesseract open-source initiative."
     },
     {
       "organization": "Mozilla",
       "position": "Open Source Developer",
       "startDate": "2020-01-01",
       "endDate": "2020-06-01",
-      "summary": "Contributed to Treeherder and OpenWPM projects."
+      "summary": "Contributed to the Treeherder and OpenWPM projects."
     },
     {
       "organization": "HACKTIET",
       "position": "Head Organizer",
       "startDate": "2019-10-01",
       "endDate": "2019-11-01",
-      "summary": "Organized North India's largest hackathon with 50+ participants from 15+ cities. Sponsors included GitHub and Wolfram Alpha."
+      "summary": "Organized North India's largest hackathon with participants from 15+ cities. Sponsors included GitHub and Wolfram Alpha."
     },
     {
       "organization": "GirlScript Patiala",
       "position": "Core Member",
       "startDate": "2019-07-01",
       "endDate": "2020-07-01",
-      "summary": "Conducted girls-focused hackathons and industry expert talks."
+      "summary": "Ran girls-focused hackathons and industry expert talks."
     },
     {
       "organization": "Developer Student Club Thapar",
       "position": "Founder and Lead",
       "startDate": "2019-07-01",
       "endDate": "2020-08-01",
-      "summary": "Founded DSC chapter. Conducted programming boot camps, workshops, and the \"RawTalent\" podcast series."
+      "summary": "Founded the DSC chapter. Ran programming boot camps, workshops, and the \"RawTalent\" podcast series."
     },
     {
       "organization": "Amazon India",
@@ -297,14 +303,34 @@
   ],
   "awards": [
     {
-      "title": "2nd Runner-up, Unlock Protocol and IPFS Pool Bounty",
-      "awarder": "ETH New York",
-      "date": "2023-09-01"
+      "title": "Winner, Smart India Hackathon 2019 (Software Edition)",
+      "awarder": "Government of India, built Meraki camera data analysis with CISCO",
+      "date": "2019-03-01"
     },
     {
       "title": "Winner, Dune Analytics Category",
-      "awarder": "ETH India 2022 (EthGlobal)",
+      "awarder": "ETH India 2022 (ETHGlobal)",
       "date": "2022-12-01"
+    },
+    {
+      "title": "2nd Runner-up, Unlock Protocol and IPFS Pool Bounty",
+      "awarder": "ETH New York (ETHGlobal)",
+      "date": "2023-09-01"
+    },
+    {
+      "title": "Winner, HashHacks 3.0",
+      "awarder": "Delhi University CIC, Delhi's biggest hackathon",
+      "date": "2019-01-01"
+    },
+    {
+      "title": "Winner, Hack36",
+      "awarder": "Motilal Nehru National Institute of Technology, Allahabad",
+      "date": "2019-01-01"
+    },
+    {
+      "title": "2nd Runner-up, Innovacer HackerCup (Hackercamp 18)",
+      "awarder": "Innovacer and Amazon, NCR's biggest hack",
+      "date": "2018-01-01"
     },
     {
       "title": "Honorary Award, HackDelhi UltraHack 19",
@@ -312,28 +338,8 @@
       "date": "2019-01-01"
     },
     {
-      "title": "Winner, Smart India Hackathon 2019 (Software Edition)",
-      "awarder": "Government of India — worked with CISCO on Meraki Camera data analysis",
-      "date": "2019-03-01"
-    },
-    {
       "title": "Special Mention, HackData 2.0",
       "awarder": "Shiv Nadar University",
-      "date": "2019-01-01"
-    },
-    {
-      "title": "Winner, Hack36",
-      "awarder": "Motilal Nehru National Institute of Engineering and Technology, Allahabad",
-      "date": "2019-01-01"
-    },
-    {
-      "title": "2nd Runner-up, Innovacer HackerCup (Hackercamp 18)",
-      "awarder": "Innovacer and Amazon — NCR's biggest hack",
-      "date": "2018-01-01"
-    },
-    {
-      "title": "Winner, HashHacks 3.0",
-      "awarder": "Delhi University CIC — Delhi's biggest Hackathon",
       "date": "2019-01-01"
     }
   ],
@@ -372,18 +378,50 @@
   "projects": [
     {
       "name": "Twitter/X MCP Server",
-      "description": "MCP server enabling AI assistants to interact with Twitter/X accounts using browser cookie authentication instead of API keys.",
+      "description": "MCP server that lets AI assistants interact with Twitter/X accounts using browser cookie authentication instead of API keys.",
       "isActive": true,
       "highlights": [
-        "No API key required - uses cookie-based auth via twikit",
+        "No API key required, cookie-based auth via twikit",
         "20+ tools: tweets, engagement, discovery, media support",
         "Compatible with Claude Code and Claude Desktop"
       ],
       "github": "https://github.com/shubhank-saxena/twitter-account-mcp"
     },
     {
+      "name": "Pothole Detection",
+      "description": "Computer-vision system for detecting potholes from road imagery using Mask R-CNN.",
+      "isActive": true,
+      "highlights": [
+        "44+ stars on GitHub",
+        "Built with Python, TensorFlow, and Mask R-CNN",
+        "Real-world application for road safety"
+      ],
+      "github": "https://github.com/shubhank-saxena/Pothole-Detection"
+    },
+    {
+      "name": "Stress-ng REST Server",
+      "description": "Flask REST server wrapping stress-ng for configurable compute, storage, and network stress tests with time-varying parameters.",
+      "isActive": true,
+      "highlights": [
+        "REST API wrapper around the stress-ng CLI",
+        "Supports time-varying stress profiles",
+        "Dockerized for easy deployment"
+      ],
+      "github": "https://github.com/shubhank-saxena/stress-ng-server"
+    },
+    {
+      "name": "BlindSpot",
+      "description": "All-in-one assistive device for visually impaired users: scene description, OCR, navigation, path detection, and integrated payments.",
+      "isActive": false,
+      "highlights": [
+        "Designed for low-income users",
+        "Multiple AI models across assistive tasks",
+        "Integrated payment system for accessibility"
+      ]
+    },
+    {
       "name": "Cisco Meraki DevNet App",
-      "description": "Flutter-based cross-platform app for Meraki camera data analysis and queue prediction using LSTM.",
+      "description": "Flutter cross-platform app for Meraki camera data analysis and queue prediction using LSTM.",
       "isActive": false,
       "highlights": [
         "Integrated Google Assistant, Alexa, and automated SMS/email alerts",
@@ -392,57 +430,25 @@
       ]
     },
     {
-      "name": "BlindSpot",
-      "description": "All-in-one assistive device for visually impaired users: scene description, OCR, navigation, path detection, and integrated payments.",
-      "isActive": false,
-      "highlights": [
-        "Targeted at low-income users",
-        "Multiple AI models for different assistive tasks",
-        "Integrated payment system for accessibility"
-      ]
-    },
-    {
-      "name": "Pothole Detection",
-      "description": "Computer vision system for detecting potholes using Mask R-CNN.",
-      "isActive": true,
-      "highlights": [
-        "44 stars on GitHub",
-        "Built with Python, TensorFlow, and Mask R-CNN",
-        "Real-world application for road safety"
-      ],
-      "github": "https://github.com/shubhank-saxena/Pothole-Detection"
-    },
-    {
       "name": "ASL Translator",
-      "description": "Sign language alphabet recognizer using Python, OpenCV, and TensorFlow with InceptionV3 CNN for classification.",
+      "description": "Sign-language alphabet recognizer using Python, OpenCV, and a TensorFlow InceptionV3 CNN for classification.",
       "isActive": false,
       "highlights": [
-        "Real-time sign language recognition via webcam",
-        "Trained InceptionV3 model for classification",
+        "Real-time sign-language recognition via webcam",
+        "Trained an InceptionV3 model for classification",
         "Built with OpenCV and TensorFlow"
       ],
       "github": "https://github.com/shubhank-saxena/ASL-Classifier"
     },
     {
       "name": "Speech Recognition DNN",
-      "description": "Deep neural network for end-to-end automatic speech recognition pipeline using LibreSpeech dataset.",
+      "description": "Deep neural network for an end-to-end automatic speech recognition pipeline using the LibriSpeech dataset.",
       "isActive": false,
       "highlights": [
-        "Converts raw audio to feature representations for ASR",
+        "Converts raw audio into feature representations for ASR",
         "Maps audio features to transcribed text",
-        "Trained on LibreSpeech dataset"
+        "Trained on the LibriSpeech dataset"
       ]
-    },
-    {
-      "name": "Stress-ng REST Server",
-      "description": "Flask-based REST server wrapping stress-ng for configurable compute, storage, and network stress tests with time-varying parameters.",
-      "isActive": true,
-      "highlights": [
-        "REST API wrapper around stress-ng CLI tool",
-        "Support for time-varying stress tests",
-        "Dockerized for easy deployment"
-      ],
-      "github": "https://github.com/shubhank-saxena/stress-ng-server"
     }
   ]
 }

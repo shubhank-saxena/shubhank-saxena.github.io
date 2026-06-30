@@ -16,15 +16,27 @@ const projects = projectsData as Projects[]
               <article>
                 <header>
                   <h3>
-                    <a href={url} target="_blank" title={`View the project ${name}`}>
-                      {name}
-                    </a>
-                    {isActive && <span>•</span>}
+                    {url || github ? (
+                      <a
+                        href={url || github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`View the project ${name}`}
+                      >
+                        {name}
+                      </a>
+                    ) : (
+                      <span class="project-name">{name}</span>
+                    )}
+                    {isActive && (
+                      <span class="active-dot" title="Actively maintained" aria-label="Actively maintained">•</span>
+                    )}
                     {github && (
                       <a
                         class="github-code-link"
                         href={github}
                         target="_blank"
+                        rel="noopener noreferrer"
                         title={`View the source code of the project ${name}`}
                       >
                         <Icon name="simple-icons:github" class="icon" />
@@ -87,8 +99,9 @@ const projects = projectsData as Projects[]
     margin-bottom: 4px;
   }
 
-  article h3 span {
+  article h3 .active-dot {
     color: rgb(0, 188, 47);
+    cursor: default;
     animation-name: flicker;
     animation-duration: 3s;
     animation-timing-function: ease-in;
@@ -140,7 +153,7 @@ const projects = projectsData as Projects[]
   }
 
   @media print {
-    article h3 span {
+    article h3 .active-dot {
       animation-name: none;
     }
   }

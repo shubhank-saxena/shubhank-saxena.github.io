@@ -1,6 +1,7 @@
 ---
 import type { Basics } from "@/data/cv"
 import { basics as basicsData } from "@cv"
+import cv from "@cv"
 
 interface Props {
   title: string
@@ -8,7 +9,55 @@ interface Props {
 
 const { title } = Astro.props
 
-const { image, summary, url="" } = basicsData as Basics
+const { name, label, email, image, summary, url = "", location, profiles = [] } =
+  basicsData as Basics
+const ogImage = url && image ? `${url}${image}` : ""
+
+// Structured data (schema.org Person) so search engines and AI crawlers can
+// parse who this is. Built from cv.json, so it never drifts from the site.
+const { work = [], education = [], skills = [], languages = [] } = cv as any
+const currentRole = work[0]
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name,
+  url,
+  ...(ogImage ? { image: ogImage } : {}),
+  ...(email ? { email } : {}),
+  ...(currentRole?.position ? { jobTitle: currentRole.position } : label ? { jobTitle: label } : {}),
+  ...(summary ? { description: summary } : {}),
+  ...(location?.city
+    ? {
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: location.city,
+          ...(location.region ? { addressRegion: location.region } : {}),
+          ...(location.countryCode ? { addressCountry: location.countryCode } : {}),
+        },
+      }
+    : {}),
+  ...(currentRole
+    ? {
+        worksFor: {
+          "@type": "Organization",
+          name: currentRole.name,
+          ...(currentRole.url ? { url: currentRole.url } : {}),
+        },
+      }
+    : {}),
+  alumniOf: education.map((e: any) => ({ "@type": "CollegeOrUniversity", name: e.institution })),
+  knowsAbout: [
+    "Backend engineering",
+    "Distributed systems",
+    "Infrastructure",
+    "Observability",
+    "Assistive technology",
+    ...skills.flatMap((s: any) => s.items ?? []),
+  ],
+  knowsLanguage: languages.map((l: any) => l.language),
+  sameAs: profiles.map((p: any) => p.url).filter(Boolean),
+}
 ---
 
 <!doctype html>
@@ -17,7 +66,8 @@ const { image, summary, url="" } = basicsData as Basics
     <meta charset="UTF-8" />
     <title>{title}</title>
     <meta name="description" content={summary} />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {url && <link rel="canonical" href={`${url}/`} />}
     <!-- link rel="icon" type="image/svg+xml" href="/favicon.svg" /-->
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="preload" as="image" href={image} />
@@ -26,14 +76,16 @@ const { image, summary, url="" } = basicsData as Basics
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={summary} />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content={ogImage} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content={url.split("//")[1] ?? ''} />
     <meta property="twitter:url" content={url} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={summary} />
-    <meta name="twitter:image" content="" />
+    <meta name="twitter:image" content={ogImage} />
+
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(personSchema)} />
   </head>
   <body>
     <slot />
@@ -42,6 +94,9 @@ const { image, summary, url="" } = basicsData as Basics
 
 <style is:global>
   html {
+    font-size: 19px;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     font-family:
       Menlo,
       Monaco,
