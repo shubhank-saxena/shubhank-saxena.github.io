@@ -13,6 +13,12 @@ const { name, label, email, image, summary, url = "", location, profiles = [] } 
   basicsData as Basics
 const ogImage = url && image ? `${url}${image}` : ""
 
+// Google Analytics (GA4). Only loaded in production builds so local dev and
+// test builds don't pollute the stats. The Measurement ID is a public client
+// identifier, not a secret.
+const GA_ID = "G-BM9DP0C2HN"
+const enableAnalytics = import.meta.env.PROD
+
 // Structured data (schema.org Person) so search engines and AI crawlers can
 // parse who this is. Built from cv.json, so it never drifts from the site.
 const { work = [], education = [], skills = [], languages = [] } = cv as any
@@ -86,6 +92,20 @@ const personSchema = {
     <meta name="twitter:image" content={ogImage} />
 
     <script type="application/ld+json" is:inline set:html={JSON.stringify(personSchema)} />
+
+    {
+      enableAnalytics && (
+        <Fragment>
+          <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+          <script define:vars={{ gaId: GA_ID }}>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', gaId);
+          </script>
+        </Fragment>
+      )
+    }
   </head>
   <body>
     <slot />
