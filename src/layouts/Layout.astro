@@ -74,8 +74,9 @@ const personSchema = {
     <meta name="description" content={summary} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {url && <link rel="canonical" href={`${url}/`} />}
-    <!-- link rel="icon" type="image/svg+xml" href="/favicon.svg" /-->
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" as="image" href={image} />
 
     <meta property="og:url" content={url} />
