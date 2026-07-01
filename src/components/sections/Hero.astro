@@ -194,13 +194,22 @@ const printInfo = [email, phone, linkedinUrl].filter(Boolean).join(" • ")
   function updateTime() {
     const el = document.getElementById('local-time');
     if (!el) return;
+    const tz = 'America/New_York';
     const now = new Date();
-    el.textContent = now.toLocaleTimeString('en-US', {
-      timeZone: 'America/New_York',
+    const date = now.toLocaleDateString('en-US', {
+      timeZone: tz,
+      weekday: 'short',
+      month: 'short',
+      day: 'numeric',
+    });
+    const time = now.toLocaleTimeString('en-US', {
+      timeZone: tz,
       hour: 'numeric',
       minute: '2-digit',
       hour12: true,
-    }) + ' EST';
+      timeZoneName: 'short',
+    });
+    el.textContent = `${date} • ${time}`;
   }
   updateTime();
   setInterval(updateTime, 1000);
