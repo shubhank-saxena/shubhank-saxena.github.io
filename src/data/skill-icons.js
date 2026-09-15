@@ -29,7 +29,7 @@ export const SKILL_ICON_MAP = {
   // AI Tools & Harness
   claudecode: 'simple-icons:claude',
   cursor: 'simple-icons:cursor',
-  copilot: 'simple-icons:githubcopilot',
+  codex: 'codex',
   hermes: 'hermes',
   mcp: 'simple-icons:modelcontextprotocol',
 
