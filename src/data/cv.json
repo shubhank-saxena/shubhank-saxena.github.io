@@ -192,7 +192,7 @@
     },
     {
       "category": "Backend & Frameworks",
-      "items": ["Django", "Flask", "Node", "React"]
+      "items": ["Django", "Flask", "Node", "React", "React Native"]
     },
     {
       "category": "Data & Storage",

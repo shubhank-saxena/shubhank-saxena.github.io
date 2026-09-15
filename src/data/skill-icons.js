@@ -85,6 +85,7 @@ const ALIASES = {
   'nextjs': 'next',
   'nodejs': 'node',
   'reactjs': 'react',
+  'reactnative': 'react',
   'js': 'javascript',
   'ts': 'typescript',
   'x' : 'twitter'
