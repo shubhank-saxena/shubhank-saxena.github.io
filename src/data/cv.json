@@ -212,7 +212,7 @@
     },
     {
       "category": "AI Tools & Harness",
-      "items": ["Claude Code", "Cursor", "Copilot", "MCP"]
+      "items": ["Claude Code", "Cursor", "Copilot", "Hermes", "MCP"]
     }
   ],
   "writing": {
