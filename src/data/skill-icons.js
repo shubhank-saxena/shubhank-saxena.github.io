@@ -26,6 +26,12 @@ export const SKILL_ICON_MAP = {
   flutter: "devicon:flutter",
   astro: "devicon:astro",
 
+  // AI Tools & Harness
+  claudecode: 'simple-icons:claude',
+  cursor: 'simple-icons:cursor',
+  copilot: 'simple-icons:githubcopilot',
+  mcp: 'simple-icons:modelcontextprotocol',
+
   // Frameworks
   django: 'devicon:djangorest',
   flask: 'devicon:flask',

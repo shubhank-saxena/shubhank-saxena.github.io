@@ -209,6 +209,10 @@
     {
       "category": "ML & Data Science",
       "items": ["PyTorch", "Pandas", "NumPy"]
+    },
+    {
+      "category": "AI Tools & Harness",
+      "items": ["Claude Code", "Cursor", "Copilot", "MCP"]
     }
   ],
   "writing": {
