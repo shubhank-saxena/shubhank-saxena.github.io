@@ -31,6 +31,7 @@ export const SKILL_ICON_MAP = {
   cursor: 'simple-icons:cursor',
   codex: 'codex',
   hermes: 'hermes',
+  paseo: 'paseo',
   mcp: 'simple-icons:modelcontextprotocol',
 
   // Frameworks
