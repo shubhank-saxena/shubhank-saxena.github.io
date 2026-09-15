@@ -303,9 +303,9 @@
   ],
   "awards": [
     {
-      "title": "Winner, Smart India Hackathon 2019 (Software Edition)",
-      "awarder": "Government of India, built Meraki camera data analysis with CISCO",
-      "date": "2019-03-01"
+      "title": "2nd Runner-up, Unlock Protocol and IPFS Pool Bounty",
+      "awarder": "ETH New York (ETHGlobal)",
+      "date": "2023-09-01"
     },
     {
       "title": "Winner, Dune Analytics Category",
@@ -313,9 +313,9 @@
       "date": "2022-12-01"
     },
     {
-      "title": "2nd Runner-up, Unlock Protocol and IPFS Pool Bounty",
-      "awarder": "ETH New York (ETHGlobal)",
-      "date": "2023-09-01"
+      "title": "Winner, Smart India Hackathon 2019 (Software Edition)",
+      "awarder": "Government of India, built Meraki camera data analysis with CISCO",
+      "date": "2019-03-01"
     },
     {
       "title": "Winner, HashHacks 3.0",
@@ -328,11 +328,6 @@
       "date": "2019-01-01"
     },
     {
-      "title": "2nd Runner-up, Innovacer HackerCup (Hackercamp 18)",
-      "awarder": "Innovacer and Amazon, NCR's biggest hack",
-      "date": "2018-01-01"
-    },
-    {
       "title": "Honorary Award, HackDelhi UltraHack 19",
       "awarder": "91 Springboard",
       "date": "2019-01-01"
@@ -341,6 +336,11 @@
       "title": "Special Mention, HackData 2.0",
       "awarder": "Shiv Nadar University",
       "date": "2019-01-01"
+    },
+    {
+      "title": "2nd Runner-up, Innovacer HackerCup (Hackercamp 18)",
+      "awarder": "Innovacer and Amazon, NCR's biggest hack",
+      "date": "2018-01-01"
     }
   ],
   "certificates": [
