@@ -30,6 +30,7 @@ export const SKILL_ICON_MAP = {
   claudecode: 'simple-icons:claude',
   cursor: 'simple-icons:cursor',
   copilot: 'simple-icons:githubcopilot',
+  hermes: 'hermes',
   mcp: 'simple-icons:modelcontextprotocol',
 
   // Frameworks
