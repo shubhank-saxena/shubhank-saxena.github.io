@@ -32,6 +32,7 @@ export const GET: APIRoute = () => {
     awards = [] as any[],
     education = [] as any[],
     languages = [] as any[],
+    talks = [] as any[],
     writing,
   } = cv as any
 
@@ -100,6 +101,19 @@ export const GET: APIRoute = () => {
       if (!w.highlights?.length && w.summary) p(w.summary)
       p()
     }
+  }
+
+  // Talks
+  if (talks.length) {
+    p(`## Talks and presentations`)
+    p()
+    for (const t of talks) {
+      const meta = [t.event, t.location, year(t.date)].filter(Boolean).join(", ")
+      const link = t.url || t.video
+      const title = link ? `[${t.title}](${link})` : t.title
+      p(`- **${title}**${meta ? ` (${meta})` : ""}${t.description ? `: ${t.description}` : ""}`)
+    }
+    p()
   }
 
   // Projects

@@ -379,6 +379,17 @@
       "date": "2019-01-01"
     }
   ],
+  "talks": [
+    {
+      "title": "The Model Is a Commodity. The Harness Is the Product.",
+      "event": "DevConf.US",
+      "date": "2026-09-24",
+      "location": "Boston, MA",
+      "description": "Why the durable, ownable part of a production LLM system is the harness around the model: routing, guardrails, memory, observability, verification, containment, not the model, which is a commoditizing dependency.",
+      "url": "https://talks.shubhank.dev/devconf-us-sept-2026/",
+      "video": "https://pretalx.devconf.info/devconf-us-2026/talk/HGAM8H/"
+    }
+  ],
   "projects": [
     {
       "name": "Twitter/X MCP Server",

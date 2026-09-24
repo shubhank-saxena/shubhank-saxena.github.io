@@ -1,0 +1,126 @@
+---
+import Section from "../Section.astro"
+import { talks as talksData } from "@cv"
+import type { Talks } from "@/data/cv"
+
+const talks = (talksData as Talks[] | undefined) ?? []
+---
+
+{
+  talks.length > 0 && (
+    <Section title="Talks & Presentations">
+      <ul>
+        {talks.map(({ title, event, date, location, description, url, video }) => {
+          const meta = [event, location].filter(Boolean).join(" · ")
+          return (
+            <li>
+              <article>
+                <header>
+                  <h3>
+                    {url ? (
+                      <a
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`View slides for ${title}`}
+                      >
+                        {title}
+                      </a>
+                    ) : (
+                      <span class="talk-title">{title}</span>
+                    )}
+                    {date && <time>{new Date(date).getFullYear()}</time>}
+                  </h3>
+                  {meta && <p class="talk-meta">{meta}</p>}
+                  {description && <p class="talk-description">{description}</p>}
+                </header>
+                {(url || video) && (
+                  <footer>
+                    {url && (
+                      <a href={url} target="_blank" rel="noopener noreferrer">
+                        Slides →
+                      </a>
+                    )}
+                    {video && (
+                      <a href={video} target="_blank" rel="noopener noreferrer">
+                        Recording →
+                      </a>
+                    )}
+                  </footer>
+                )}
+              </article>
+            </li>
+          )
+        })}
+      </ul>
+    </Section>
+  )
+}
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  h3 {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 2px;
+  }
+
+  h3 a,
+  .talk-title {
+    color: #111;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  h3 a:hover {
+    text-decoration: underline;
+  }
+
+  h3 time {
+    color: #777;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+  }
+
+  .talk-meta {
+    color: #555;
+    font-size: 0.8rem;
+  }
+
+  .talk-description {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 2px;
+  }
+
+  footer a {
+    font-size: 0.8rem;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+
+  footer a:hover {
+    color: #111;
+    border-color: #999;
+  }
+</style>

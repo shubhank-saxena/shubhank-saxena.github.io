@@ -11,6 +11,7 @@ export interface CV {
   readonly languages?: Languages[];
   readonly interests?: Interests[];
   readonly references?: References[];
+  readonly talks?: Talks[];
   readonly projects?: Projects[];
 
 }
@@ -147,6 +148,16 @@ type Language =
     name: string;
     reference?: string;
   }
+
+interface Talks {
+  title: string;
+  event?: string;
+  date?: DateStr;
+  location?: string;
+  description?: string;
+  url?: string;
+  video?: string;
+}
 
 interface Projects {
   name: string;
